@@ -41,9 +41,9 @@ const FromTo = () => {
               type="radio"
               name="numberOfStops"
               id="onestop"
-              inputClassName="peer/onestop  w-0"
+              inputClassName="peer hidden w-0"
               htmlFor="onestop"
-              labelClassname="cursor-pointer text-white text-nowrap   py-[10px] px-[20px] text-[.8rem]  rounded-[50px] peer-checked/published:bg-sunorange "
+              labelClassname="cursor-pointer text-white text-nowrap peer-checked:bg-sunorange  py-[10px] px-[20px] text-[.8rem]  rounded-[50px]  "
               label="ONE STOP"
             />
             <Input
@@ -51,7 +51,7 @@ const FromTo = () => {
               type="radio"
               name="numberOfStops"
               id="morestops"
-              inputClassName="peer hidden w-0"
+              inputClassName="peer hidden w-0 "
               htmlFor="morestops"
               labelClassname="cursor-pointer text-white text-nowrap  peer-checked:bg-sunorange py-[10px] px-[20px] text-[.8rem]  rounded-[50px] "
               label="MORE STOP"

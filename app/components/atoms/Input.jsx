@@ -14,19 +14,12 @@ const Input = ({
   value,
   required,
   onChange,
+  checked,
 }) => {
   return (
     <div className={cn("my-[16px]", className)}>
-      <label
-        className={cn(
-          "block text-[#3E3E3E] text-[1rem] font-pop md:[1.3rem]",
-          labelClassname
-        )}
-        htmlFor={htmlFor}
-      >
-        {label}
-      </label>
       <input
+        checked={checked}
         className={cn(
           "border-[.5px] border-rurb-grey rounded-[4px] pl-[10px] pr-[5px] w-hfull mt-[12px] h-[28px] text-[.9rem] outline-0 ",
           inputClassName
@@ -39,6 +32,15 @@ const Input = ({
         name={name}
         value={value}
       />
+      <label
+        className={cn(
+          "block text-[#3E3E3E] text-[1rem] font-pop md:[1.3rem]",
+          labelClassname
+        )}
+        htmlFor={htmlFor}
+      >
+        {label}
+      </label>
     </div>
   );
 };

@@ -15,7 +15,7 @@ const BodySearch = () => {
         <div className="bg-skyblue py-[5px] pl-[15px] pr-[5px] rounded-[40px] w-[50%] flex   items-center justify-between">
           <Input
             label={<FaLocationDot />}
-            className=" my-0 flex items-center justify-between "
+            className=" my-0 flex flex-row-reverse items-center justify-between "
             inputClassName="bg-transparent border-0 mt-0 w-[160px] uppercase placeholder:text-rosemary"
             labelClassname={"text-rosemary text-[1.3rem] "}
             placeholder={"NEW YORK (JFK)"}
@@ -25,7 +25,7 @@ const BodySearch = () => {
           </div>
           <Input
             label={<FaLocationDot />}
-            className=" my-0 flex items-center justify-between "
+            className=" my-0 flex items-center flex-row-reverse justify-between "
             inputClassName="bg-transparent border-0  uppercase w-[160px] mt-0  placeholder:text-rosemary"
             labelClassname={"text-rosemary text-[1.3rem] "}
             placeholder={"MUMBAI (BOM)"}
@@ -34,7 +34,7 @@ const BodySearch = () => {
 
         <Input
           className={
-            "flex items-center justify-start my-0 bg-skyblue py-[15px] px-[25px] rounded-[40px] w-[22%]"
+            "flex flex-row-reverse items-center justify-end my-0 bg-skyblue py-[15px] px-[25px] rounded-[40px] w-[22%]"
           }
           type="text"
           placeholder="29 JULY 2019"
@@ -46,7 +46,7 @@ const BodySearch = () => {
         />
         <Input
           className={
-            "flex items-center justify-start my-0 bg-skyblue py-[15px] px-[25px] rounded-[40px] w-[22%]"
+            "flex flex-row-reverse items-center justify-end my-0 bg-skyblue py-[15px] px-[25px] rounded-[40px] w-[22%]"
           }
           type="text"
           placeholder="2 TRAVELLER"
@@ -58,23 +58,24 @@ const BodySearch = () => {
         />
         <div className="bg-skyblue py-[5px] pl-[5px] pr-[5px] rounded-[40px] w-[50%] flex   items-center justify-between">
           <Input
-            className="flex  my-0"
+            className="flex   my-0"
             type="radio"
             name="numberOfStops"
             id="nonstop"
             inputClassName="peer hidden w-0"
             htmlFor="nonstop"
-            labelClassname="cursor-pointer text-white text-nowrap  bg-rosemary py-[15px] px-[40px] text-[.8rem]   rounded-[50px] "
+            labelClassname="cursor-pointer  text-nowrap  bg-rosemary text-white  py-[15px] px-[40px] text-[.8rem]   rounded-[50px] "
             label="ONE WAY"
           />
+
           <Input
             className="flex my-0 "
             type="radio"
+            labelClassname="cursor-pointer text-rosemary text-nowrap peer-checked:bg-rosemary peer-checked:text-white py-[15px] px-[35px] text-[.8rem]  rounded-[50px] "
             name="numberOfStops"
             id="onestop"
-            inputClassName="peer/onestop  w-0"
+            inputClassName="peer hidden w-0 "
             htmlFor="onestop"
-            labelClassname="cursor-pointer text-rosemary text-nowrap peer-checked/published:bg-rosemary peer-checked:text-white py-[15px] px-[35px] text-[.8rem]  rounded-[50px] "
             label="ROUND TRIP"
           />
           <Input
@@ -90,7 +91,7 @@ const BodySearch = () => {
         </div>
         <Input
           className={
-            "flex items-center justify-start my-0 bg-skyblue py-[15px] px-[25px] rounded-[40px] w-[22%]"
+            "flex flex-row-reverse items-center justify-end my-0 bg-skyblue py-[15px] px-[25px] rounded-[40px] w-[22%]"
           }
           type="text"
           placeholder="FIRST CLASS"

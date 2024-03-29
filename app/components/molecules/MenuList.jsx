@@ -55,8 +55,8 @@ const MenuList = () => {
             >
               <Link
                 className={
-                  pathName === linkList.path
-                    ? "flex items-center gap-[15px] p-[10px] text-[white] text-[13px]  cursor-pointer font-normal rounded-[20px] w-full bg-techko-main"
+                  "/flight" === linkList.path
+                    ? "flex items-center gap-[15px] p-[10px] bg-skyblue text-rosemary text-[13px]  cursor-pointer font-normal rounded-[20px] w-full bg-techko-main"
                     : "flex items-center gap-[20px] p-[15px]  cursor-pointer text-[white] text-[13px] font-normal rounded-[30px] w-full my-[9px] hover:bg-skyblue hover:text-rosemary"
                 }
                 href={linkList.path}
